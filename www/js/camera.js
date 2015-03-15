@@ -19,17 +19,44 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-		
+		$('#btnGetImageData').click(function(e) {			
+			navigator.camera.getPicture(onSuccessData, onFail, { correctOrientation:true, quality:50, destinationType:Camera.DestinationType.DATA_URL });
+			e.preventDefault();
+		});
 		
 		$('#btnGetImageUrl').click(function(e) {			
-			navigator.camera.getPicture(onSuccess, function(message) {alert('Failed because: ' + message)}, { quality: 90, destinationType: Camera.DestinationType.FILE_URI });
+			navigator.camera.getPicture(onSuccessUrl, onFail, { correctOrientation:true, quality:50, destinationType:Camera.DestinationType.FILE_URI });
+			e.preventDefault();
+		});
+		
+		$('#btnGetImageAlbum').click(function(e) {			
+			navigator.camera.getPicture(onSuccessUrl, onFail, { 
+				quality:50, 
+				destinationType:Camera.DestinationType.FILE_URI, 
+				sourceType:Camera.PictureSourceType.SAVEDPHOTOALBUM,
+			});
 			e.preventDefault();
 		});
     }
 };
 
-function onSuccess(imageURI) {
-	window.plugins.toast.show('Image Captured: '+imageURI);
-	//var image = $('#canvasPreview');
+function onSuccessData(imageData) {
+	alert('Success');
+	//window.plugins.toast.showLongBottom('Image data captured!')
+	//image.src = "data:image/jpeg;base64," + imageData;
+	//var image = document.getElementById('canvasPreview');
+    //image.src = "data:image/jpeg;base64," + imageData
+	var image = $('#canvasPreview').attr('src', "data:image/jpeg;base64," + imageData);
+}
+
+function onSuccessUrl(imageURI) {
+	alert('Success: ' + imageURI);
+	//var image = document.getElementById('canvasPreview');
 	//image.src = imageURI;
+	$('#canvasPreview').attr('src', imageURI);
+}
+
+function onFail(message)
+{
+	alert('Failed: ' + message);
 }
