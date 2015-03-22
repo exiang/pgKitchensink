@@ -19,7 +19,7 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-	
+		
 		$('#btnFire1').attr('disabled','disabled');
 		cordova.plugins.notification.local.registerPermission(function (granted) {
 			$('#btnFire1').removeAttr('disabled');

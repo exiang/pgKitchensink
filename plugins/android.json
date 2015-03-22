@@ -31,6 +31,18 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpinnerPlugin\"><param name=\"android-package\" value=\"it.mobimentum.phonegapspinnerplugin.SpinnerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"org.pgsqlite.SQLitePlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -65,6 +77,14 @@
                         {
                             "xml": "<activity android:exported=\"false\" android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.notification.ClickActivity\" android:theme=\"@android:style/Theme.NoDisplay\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden|keyboard|screenSize|locale\" android:launchMode=\"singleInstance\" android:name=\"it.mobimentum.phonegapspinnerplugin.ProgressActivity\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"><intent-filter></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:label=\"@string/app_name\" android:name=\"org.pgsqlite.SQLitePlugin\"></activity>",
+                            "count": 1
                         }
                     ],
                     "/manifest": [
@@ -76,7 +96,7 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -97,6 +117,15 @@
             "PACKAGE_NAME": "com.yeesiang.pg.kitchensink"
         },
         "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.yeesiang.pg.kitchensink"
+        },
+        "it.mobimentum.phonegapspinnerplugin": {
+            "PACKAGE_NAME": "com.yeesiang.pg.kitchensink"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.yeesiang.pg.kitchensink"
+        },
+        "com.brodysoft.sqlitePlugin": {
             "PACKAGE_NAME": "com.yeesiang.pg.kitchensink"
         }
     },

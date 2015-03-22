@@ -36,5 +36,25 @@
             "type": "registry",
             "id": "org.apache.cordova.device"
         }
+    },
+    "it.mobimentum.phonegapspinnerplugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mobimentum/phonegap-plugin-loading-spinner.git",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.file": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file"
+        }
+    },
+    "com.brodysoft.sqlitePlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brodysoft/Cordova-SQLitePlugin",
+            "subdir": "."
+        }
     }
 }
