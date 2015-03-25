@@ -24,22 +24,22 @@ Website: https://github.com/brodysoft/Cordova-SQLitePlugin
 ```cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin```
 
 ### Dialog Popup ###
-website: https://github.com/apache/cordova-plugin-dialogs
+website: https://github.com/apache/cordova-plugin-dialogs/blob/6401713/README.md
 
-``` cordova plugin add cordova-plugin-dialogs ```
+``` cordova plugin add org.apache.cordova.dialogs ```
 
 ### File System ###
-website: https://github.com/apache/cordova-plugin-file
+website: https://github.com/apache/cordova-plugin-file/blob/198ca61/README.md
 
-``` cordova plugin add cordova-plugin-file ```
+``` cordova plugin add org.apache.cordova.file ```
 
     
 ### Camera ###
-website: https://github.com/apache/cordova-plugin-camera
+website: https://github.com/apache/cordova-plugin-camera/blob/af18483/README.md
 
-``` cordova plugin add cordova-plugin-camera ```
+``` cordova plugin add org.apache.cordova.camera ```
 
 ### Device ###
-website: https://github.com/apache/cordova-plugin-device
+website: https://github.com/apache/cordova-plugin-device/blob/c6e23d8/README.md
 
-``` cordova plugin add cordova-plugin-device ```
+``` cordova plugin add org.apache.cordova.device ```
