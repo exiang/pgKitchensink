@@ -18,6 +18,11 @@ website: https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin
 
 ``` cordova plugin add nl.x-services.plugins.toast ```
 
+### SQLite ###
+Website: https://github.com/brodysoft/Cordova-SQLitePlugin
+
+```cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin```
+
 ### Dialog Popup ###
 website: https://github.com/apache/cordova-plugin-dialogs
 
@@ -28,10 +33,6 @@ website: https://github.com/apache/cordova-plugin-file
 
 ``` cordova plugin add cordova-plugin-file ```
 
-### SQLite ###
-Website: https://github.com/brodysoft/Cordova-SQLitePlugin
-
-```cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin```
     
 ### Camera ###
 website: https://github.com/apache/cordova-plugin-camera
