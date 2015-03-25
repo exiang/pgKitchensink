@@ -3,7 +3,7 @@ phonegap kitchensink project
 
 ## plugins ##
 
-### Spinner ### 
+### Spinner ###
 website: https://github.com/mobimentum/phonegap-plugin-loading-spinner
 
 ``` cordova plugin add https://github.com/mobimentum/phonegap-plugin-loading-spinner.git ```
