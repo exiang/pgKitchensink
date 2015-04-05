@@ -33,6 +33,11 @@ website: https://github.com/apache/cordova-plugin-file/blob/198ca61/README.md
 
 ``` cordova plugin add org.apache.cordova.file ```
 
+### File Transfer ###
+website: https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2/README.md
+
+``` cordova plugin add org.apache.cordova.file-transfer ```
+
     
 ### Camera ###
 website: https://github.com/apache/cordova-plugin-camera/blob/af18483/README.md
